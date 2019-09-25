@@ -10,7 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        ZStack {
+            
+            VStack(spacing: 34) {
+                ForEach(0 ..< 24) { item in
+                    Divider()
+                }
+            }
+            
+            HStack(spacing: 34) {
+                ForEach(0 ..< 24) { item in
+                    Divider()
+                }
+            }
+        }
     }
 }
 
